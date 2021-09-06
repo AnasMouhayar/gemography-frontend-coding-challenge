@@ -7,6 +7,7 @@ import { CHALLENGE_ROUTES } from './coding-challenge.routes';
 import { RouterModule } from '@angular/router';
 
 import { CodingChallengeComponent } from './coding-challenge.component';
+import { MaterialAngularModule } from '../angular-material/angular-material.module';
 
 
 
@@ -19,6 +20,7 @@ import { CodingChallengeComponent } from './coding-challenge.component';
   imports: [
     CommonModule,
     RouterModule.forChild(CHALLENGE_ROUTES),
+    MaterialAngularModule
   ],
   providers: [
     ...codingChallengeSanboxes,

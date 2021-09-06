@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CodingChallengeModule } from './modules/coding-challenge/coding-challenge.module';
+import { MaterialAngularModule } from './modules/angular-material/angular-material.module';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 
@@ -16,9 +17,10 @@ import { APP_ROUTES } from './app.routes';
     BrowserModule,
     BrowserAnimationsModule,
     CodingChallengeModule,
+    MaterialAngularModule,
     RouterModule.forRoot(APP_ROUTES),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
