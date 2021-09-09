@@ -1,0 +1,42 @@
+<div class="div_repos_item">
+  <mat-card>
+    <mat-card-content>
+      <div class="div_mat_card_content">
+        <div class="div_img_avatar">
+          <img class="img_avatar"
+            src="{{repository.owner.avatar_url}}"
+            mat-card-avatar>
+        </div>
+        <div class="div_mat_card_content_inside">
+          <mat-card-title>{{repository.name}}</mat-card-title>
+          <p class="p_description">{{repository.description}}</p>
+          <div class="div_stars_issues_timeago">
+            <div class="div_issues">
+              <div class="div_issues_value">
+                <div class="div_issues_icon">
+                  <mat-icon aria-hidden="false" color="red">bug_report</mat-icon>
+                  <p class="p_issues_label">Issue</p>
+                </div>
+                <div class="div_issues_count">{{repository.open_issues}}</div>
+              </div>
+            </div>
+            <div class="div_stars">
+              <div class="div_stars_value">
+                <div class="div_stars_icon">
+                  <mat-icon aria-hidden="false" color="red">grade</mat-icon>
+                  <p class="p_stars_label">Star</p>
+                </div>
+                <div class="div_stars_count">{{repository.stargazers_count}}</div>
+              </div>
+            </div>
+            <div class="div_time_ago">
+              <p class="p_time_ago">
+                Submitted {{calculateDateAndTimeDifference(repository.updated_at)}} ago by&nbsp;<b style="color: black;"> {{repository.owner.login}}</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,105 @@
+.div_repos_item{
+  width: 100%;
+  margin-bottom: 22px;
+}
+.div_mat_card_content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+.div_img_avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div_mat_card_content_inside{
+  padding: 6px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.img_avatar{
+  height: 100px;
+  width: 100px;
+}
+.p_description {
+  font-size: 16px;
+  color: #6f6f6f;
+}
+.div_stars_issues_timeago{
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 150px 1fr;
+}
+.div_issues{
+  display: flex;
+  align-items: center;
+}
+.div_stars{
+  display: flex;
+  align-items: center;
+}
+.div_time_ago{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.div_issues_value{
+  height: 32px;
+  border-color: #ff7b7b;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.div_issues_icon{
+  background-color: #ff7b7b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 9px 0 3px;
+}
+.div_issues_count{
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+.p_issues_label{
+  padding-left: 2px;
+  font-weight: 500;
+}
+.div_stars_value{
+  height: 32px;
+  border-color: #efba6c;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.div_stars_icon{
+  background-color: #efba6c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 9px 0 3px;
+}
+.div_stars_count{
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+.p_stars_label{
+  padding-left: 2px;
+  font-weight: 500;
+}
+.p_time_ago{
+  color: #8a8a8a;
+  margin: 0;
+  padding: 0;
+}
