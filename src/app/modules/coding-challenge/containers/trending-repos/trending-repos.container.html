@@ -1,4 +1,5 @@
-<div class="div_repos_container">
+<div class="div_repos_container" infiniteScroll [infiniteScrollDistance]="2" 
+                                                [infiniteScrollThrottle]="50" 
+                                                (scrolled)="selectData()">
     <app-repos-list [reposList]="this.trendingRepos"></app-repos-list>
 </div>
-<button mat-button (click)="selectData()">Click me!</button>

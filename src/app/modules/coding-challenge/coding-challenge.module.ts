@@ -16,6 +16,8 @@ import { ReposEffects } from './shared/store/effects/trending-repos.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 
 
 @NgModule({
@@ -36,6 +38,7 @@ import { environment } from 'src/environments/environment';
       }}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([ReposEffects]),
+    InfiniteScrollModule
   ],
   providers: [
     ...codingChallengeSanboxes,
