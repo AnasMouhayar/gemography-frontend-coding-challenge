@@ -12,8 +12,8 @@ import { TrendingReposSandbox } from './trending-repos.sandbox';
 })
 export class TrendingReposContainer implements OnInit {
 
-  trendingRepos: any[];
-  page: number = 1;
+  private trendingRepos: any[];
+  private page: number = 1;
 
 
   constructor(private TrendingReposSandbox: TrendingReposSandbox,private store: Store<{ repos: any }>) {
@@ -21,7 +21,7 @@ export class TrendingReposContainer implements OnInit {
   }
 
   ngOnInit() {
-    this.TrendingReposSandbox.loadReposPage(1,"stars")
+    this.TrendingReposSandbox.loadReposPage(this.page,"stars")
   }
 
 

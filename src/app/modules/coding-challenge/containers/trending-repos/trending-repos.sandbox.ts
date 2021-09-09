@@ -9,7 +9,7 @@ export class TrendingReposSandbox extends Sandbox {
 
   constructor(private store: Store<{ repos: any }>) {
     super();
-  
+
   }
 
   getRepos(): Observable<any>{
