@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Used libraries
 
-[@ngrx/store](https://ngrx.io/guide/store)
-[@ngrx/effects](https://ngrx.io/guide/effects)
-[@ngrx/store-devtools](https://ngrx.io/guide/store-devtools)
-[ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll)
+[@ngrx/store](https://ngrx.io/guide/store)  
+[@ngrx/effects](https://ngrx.io/guide/effects)  
+[@ngrx/store-devtools](https://ngrx.io/guide/store-devtools)  
+[ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll)  
 
 ## Development server
 
