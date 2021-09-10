@@ -1,3 +1,4 @@
+import { trendingReposState } from '../../interfaces';
 import { ActionsUnion, ActionTypes } from '../actions/trending-repos.actions';
 
 

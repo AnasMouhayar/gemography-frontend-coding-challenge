@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import * as internal from 'assert';
+import { Repository, trendingReposState } from '../../shared/interfaces';
 import { GetItems } from '../../shared/store/actions/trending-repos.actions';
 import { TrendingReposSandbox } from './trending-repos.sandbox';
 
@@ -12,11 +13,11 @@ import { TrendingReposSandbox } from './trending-repos.sandbox';
 })
 export class TrendingReposContainer implements OnInit {
 
-  private trendingRepos: any[];
+  private trendingRepos: Repository[];
   private page: number = 1;
 
 
-  constructor(private TrendingReposSandbox: TrendingReposSandbox,private store: Store<{ repos: any }>) {
+  constructor(private TrendingReposSandbox: TrendingReposSandbox,private store: Store<trendingReposState>) {
     this.TrendingReposSandbox.getRepos().subscribe(data => (this.trendingRepos = data.items));
   }
 
@@ -25,8 +26,7 @@ export class TrendingReposContainer implements OnInit {
   }
 
 
-  selectData(){
-    console.log(this.trendingRepos)
+  selectData() {
     this.page++;
     this.TrendingReposSandbox.loadReposPage(this.page,"stars")
   }

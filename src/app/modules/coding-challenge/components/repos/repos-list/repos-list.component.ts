@@ -1,4 +1,5 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
+import { Repository } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-repos-list',
@@ -7,7 +8,7 @@ import { Component, Inject, Input, OnInit } from '@angular/core';
 })
 export class ReposListComponent {
   
-  @Input() reposList: any[];
+  @Input() reposList: Repository[];
 
   constructor() {}
 

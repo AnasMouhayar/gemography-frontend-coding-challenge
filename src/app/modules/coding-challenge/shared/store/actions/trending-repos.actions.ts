@@ -1,4 +1,5 @@
 import { Action } from '@ngrx/store';
+import { Repository } from '../../interfaces';
     
     export enum ActionTypes {
       LoadItems = '[Repos] Load items from server',
@@ -12,7 +13,7 @@ import { Action } from '@ngrx/store';
     
     export class LoadItems implements Action {
       readonly type = ActionTypes.LoadSuccess;
-      constructor(public payload: any[]) {}
+      constructor(public payload: Repository[]) {}
     }
     
     export type ActionsUnion = LoadItems | GetItems;
