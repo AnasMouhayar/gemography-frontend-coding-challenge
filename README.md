@@ -1,8 +1,17 @@
-# Gemography
+# Gemography frontend coding challenge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
+## Used libraries
+
+[@ngrx/store](https://ngrx.io/guide/store)
+[@ngrx/effects](https://ngrx.io/guide/effects)
+[@ngrx/store-devtools](https://ngrx.io/guide/store-devtools)
+[ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll)
+
 ## Development server
+
+Run `npm i` to download and install packages.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
