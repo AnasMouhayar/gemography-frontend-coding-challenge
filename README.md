@@ -8,6 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 [@ngrx/effects](https://ngrx.io/guide/effects)  
 [@ngrx/store-devtools](https://ngrx.io/guide/store-devtools)  
 [ngx-infinite-scroll](https://www.npmjs.com/package/ngx-infinite-scroll)  
+[Angular Material](https://material.angular.io/)
 
 ## Development server
 
